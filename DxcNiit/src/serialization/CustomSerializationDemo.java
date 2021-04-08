@@ -9,11 +9,11 @@ public class CustomSerializationDemo {
 	public static void main(String[] args) throws Exception{
 		Account account = new Account();
 		
-		FileOutputStream fos = new FileOutputStream("account.txt");
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\katik\\git\\domainjava\\DxcNiit\\account.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(account);
 		
-		FileInputStream fis = new FileInputStream("account.txt");
+		FileInputStream fis = new FileInputStream("C:\\Users\\katik\\git\\domainjava\\DxcNiit\\account.txt");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		Account account2 = (Account) ois.readObject();
 		System.out.println("username = "+account2.userName+" password= "+account2.password);
